@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hemat Energi, Selamatkan Bumi</title>
+<link rel="stylesheet" href="style.css">
+<!-- Pustaka Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="brand">hemat<span>.</span>energi</div>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+    <span class="menu-label">Menu</span>
+  </button>
+  <nav id="site-nav">
+    <a href="index.html" class="active">Beranda</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="eyebrow">Kampanye Konservasi Energi</div>
+    <h1>Matikan yang Tak Perlu, Selamatkan Bumi</h1>
+    <p>Website ini mengajak warga sekolah — siswa, guru, dan staf — untuk lebih peduli dan hemat dalam menggunakan energi. Setiap kebiasaan kecil, kalau dilakukan bersama, punya dampak besar.</p>
+    <a class="btn" href="tentang.html">Kenapa Ini Penting →</a>
+  </div>
+
+  <section>
+    <div class="illust">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.45 1 1.15 1 1.9v.2h5v-.2c0-.75.4-1.45 1-1.9A6 6 0 0 0 12 3Z" stroke="#f2c14e" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kenapa Kampanye Ini Ada</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Energi Fosil Terbatas</h3>
+        <p>Sebagian besar listrik masih berasal dari batu bara dan gas alam — sumber daya yang tidak bisa diperbarui dan makin menipis.</p>
+      </div>
+      <div class="card">
+        <h3>Dampak ke Lingkungan</h3>
+        <p>Pemborosan energi berarti lebih banyak emisi karbon dibakar untuk menghasilkan listrik yang sebenarnya tidak dibutuhkan.</p>
+      </div>
+      <div class="card">
+        <h3>Bisa Dimulai dari Sekolah</h3>
+        <p>Kebiasaan mematikan lampu, mencabut charger, dan memakai listrik secukupnya bisa dimulai dari lingkungan sekolah kita sendiri.</p>
+      </div>
+      <div class="card">
+        <h3>Butuh Aksi Bersama</h3>
+        <p>Satu orang hemat energi berdampak kecil. Seluruh warga sekolah hemat energi bersama-sama, dampaknya jadi nyata.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="teaser">
+        <div class="teaser-heading">
+          <span class="badge">Data Terkini</span>
+          <h3>Data &amp; Fakta dari Sekolah Kita</h3>
+          <p>Hasil angket dan observasi menunjukkan bahwa kesadaran hemat energi sudah baik, tetapi penerapannya masih perlu diperkuat.</p>
+        </div>
+
+        <div class="data-block">
+          <h4>Grafik Hasil Angket Warga Sekolah</h4>
+          <!-- Canvas tempat Chart.js merender grafik -->
+          <div style="position: relative; width: 100%; max-width: 600px; margin: 20px auto;">
+            <canvas id="grafikAngket"></canvas>
+          </div>
+        </div>
+
+        <div class="data-block">
+          <h4>Hasil Observasi</h4>
+          <ul class="finding-list">
+            <li>Lampu masih menyala ketika ruangan sudah cukup mendapat cahaya matahari.</li>
+            <li>Beberapa orang mungkin terbiasa dan lupa ketika casan setelah digunakan tidak di cabut.</li>
+            <li>AC atau kipas jarang menyala ketika ruangan sedang kosong.</li>
+            <li>Kebiasaan mematikan perangkat sebelum meninggalkan ruangan perlu ditingkatkan.</li>
+            <li>Sebagian besar warga sekolah sudah memahami pentingnya menghemat energi.</li>
+          </ul>
+        </div>
+
+        <div class="conclusion">
+          <strong>Kesimpulan</strong>
+          <p>Kesadaran warga sekolah terhadap pentingnya hemat energi sudah cukup baik, tetapi penerapannya dalam kebiasaan sehari-hari masih perlu ditingkatkan.</p>
+       </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Proyek Kampanye Hemat Energi &middot; © 2026 Kelompok 9 &middot; Irham. Najib. Ari.
+</footer>
+
+<!-- Pastikan file data dipanggil sebelum file script utama -->
+<script src="data-perilaku-energi.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
